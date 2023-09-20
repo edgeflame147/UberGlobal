@@ -7,6 +7,7 @@
     <link href="map.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="map.js"></script>
+    <script src="map2.js"></script>
 </head>
 <body>
   <div id="layout">
@@ -18,6 +19,7 @@
           <a href="map.html" class="section">Map</a>
           <a href="forms.html" class="section">User Survey</a>
           <a href="about.html" class="section">About</a>
+          <a href="reviews.html" class="section">Past Reviews</a>
       </div>
     </aside>
 
@@ -49,7 +51,7 @@
               5:01pm-5:45pm <br>Capacity Left: 39 ppl <br> Destination: Mock Fiji Islands</span>
       </button>
   
-      <button class="btn5" onclick="appear5()">
+      <button class="btn5" onclick="appear5(); pathFinding(1);">
           <img id="red-marker" src="red-marker.png">
           <span class="details5" id="popup5"><b><h2> Candyland</h2></b> <br>Estimated Time of Departure & Arrival: 
               7:12pm-7:47pm <br>Capacity Left: 11 ppl <br> Destination: Taffy Tower</span>

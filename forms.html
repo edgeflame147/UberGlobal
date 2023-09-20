@@ -2,8 +2,8 @@
 <html lang="en">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel = "stylesheet" href = "style.css">
+<script src="form.js"></script>
 
-<script src = "form.js"></script>
 <style>
     .checked {
         color: gold;
@@ -31,6 +31,7 @@
                 <a href="map.html" class="section">Map</a>
                 <a href="forms.html" class="section">User Survey</a>
                 <a href="about.html" class="section">About</a>
+                <a href="reviews.html" class="section">Past Reviews</a>
             </div>
         </aside>
     
@@ -85,12 +86,16 @@
             
                 <br><br>
     
-                <label></label>
-                <textarea id = "feedback" name = "feedback">Feel free to provide any feedback, suggestions, etc: </textarea>
+                <label>Additional Comments/Feedback/Suggestions: </label>
                 <br>
-                <button onclick=storeInput()>Submit</button>
+                <textarea id = "feedback" name = "feedback"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+                <!-- <button onclick=surveyInput()>Submit</button> -->
             </form>
         </div>
     </div>
 </body>
+<footer>
+</footer>
 </html>
