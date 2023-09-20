@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link href="map.css" rel="stylesheet" type="text/css"/>
+    <script src="map.js"></script>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
+    <h1>Public Transport</h1>
+    <h3>choose the bus that works the best for you!</h3>
+    <button class="btn1" onclick="appear1()">
+        <img id="red-marker" src="red-marker.png">
+        <span class="details1" id="popup1"><b><h2> Twisty Transit</h2></b> <br>Estimated Time of Departure & Arrival: 11:00am-1:00pm 
+        <br>Capacity Left: 20 ppl <br> Destination: Leaning Tower of Uberland</span>
+    </button>
+    
+    <button class="btn2" onclick="appear2()">
+        <img id="red-marker" src="red-marker.png">
+        <span class="details2" id="popup2"><b><h2> Wonderous World of Woe</h2></b> <br>Estimated Time of Departure & Arrival: 
+            1:00pm-1:36pm <br>Capacity Left: 13 ppl <br> Destination: Nevermore Academy</span>
+    </button>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
+    <button class="btn3" onclick="appear3()">
+        <img id="red-marker" src="red-marker.png">
+        <span class="details3" id="popup3"><b><h2> Rifty Lifty</h2></b> <br>Estimated Time of Departure & Arrival: 
+            2:15pm-3:00pm <br>Capacity Left: 5 ppl <br> Destination: Mindless Mansion</span>
+    </button>
+
+    <button class="btn4" onclick="appear4()">
+        <img id="red-marker" src="red-marker.png">
+        <span class="details4" id="popup4"><b><h2> Probstation</h2></b> <br>Estimated Time of Departure & Arrival: 
+            5:01pm-5:45pm <br>Capacity Left: 39 ppl <br> Destination: Mock Fiji Islands</span>
+    </button>
+
+    <button class="btn5" onclick="appear5()">
+        <img id="red-marker" src="red-marker.png">
+        <span class="details5" id="popup5"><b><h2> Candyland</h2></b> <br>Estimated Time of Departure & Arrival: 
+            7:12pm-7:47pm <br>Capacity Left: 11 ppl <br> Destination: Taffy Tower</span>
+    </button>
+    <img id="map" src="coordinate-map.jpg">
 </body>
-
 </html>
