@@ -14,8 +14,10 @@ To address these problems, Transport Router aims to create an accessible interfa
 
 Initial Planning Process
   - brainstormed all our ideas and goals for the project
+  - 
 Programming
   - next, we split up to create individual pieces of code and algorithms for individual parts of the project
+    
 Putting it together
   - we put all our pieces together into our website
 
@@ -31,6 +33,9 @@ Putting it together
 
 **Credits**
 Bill Wang (Main Coder) - worked on code for map coordinates and slideshow
+
 Jessica Hsu (Main Coder) - worked on survey forms and ratings and slideshow
+
 Lillian Yao (Captain & Coder) - worked on layout and aesthetics of application and guided the team
+
 Vanessa Yao (Main Coder) - worked on map display and pop-ups
