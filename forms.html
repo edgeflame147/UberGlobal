@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel = "stylesheet" href = "form/form.css">
+<link rel = "stylesheet" href = "style.css">
 
 <script src = "form.js"></script>
 <style>
@@ -21,61 +21,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
 </head>
-<body style = "background-color: rgb(249, 207, 249);">
-    <h1>Rate Your Experience!</h1>
-    <p style = "color: red;">Your name and ID are kept anonymous and your feedback</p>
-    <p style = "color: red">can be seen on all individuals'(who's RideShare IDs are</p>
-    <p style = "color: red">entered) personal RideShare Homepage.</p>
-    <!--later maybe add hover and click stars-->
-    <div class = "star-widget">
-        <span class="fa fa-star fa-2x checked"></span>
-        <span class="fa fa-star fa-2x checked"></span>
-        <span class="fa fa-star fa-2x checked"></span>
-        <span class="fa fa-star fa-2x checked"></span>
-        <span class="fa fa-star fa-2x checked"></span>
+<body>
+    <div id="layout">
+        <aside>
+            <h1 style="margin-left: 10px;">Contents</h1>
+    
+            <div id="sidebar">
+                <a href="index.html" class="section">Home</a>
+                <a href="map.html" class="section">Map</a>
+                <a href="forms.html" class="section">User Survey</a>
+                <a href="about.html" class="section">About</a>
+            </div>
+        </aside>
+    
+        <div id="content" style="padding:10px">
+            <h1>Rate Your Experience!</h1>
+            <p style = "color: red;">Your name and ID are kept anonymous and your feedback</p>
+            <p style = "color: red">can be seen on all individuals'(who's RideShare IDs are</p>
+            <p style = "color: red">entered) personal RideShare Homepage.</p>
+            <!--later maybe add hover and click stars-->
+            <div class = "star-widget">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+            </div>
+            <br>
+            
+            <form class = "form" action = "data.html" method = "get">
+                <label>Name:</label>
+                <input type = "text" id = "name" name = "name" required>
+    
+                <br><br>
+                <label>Enter your RideShare ID:</label>
+                <input type = "uid" id = "uid" name = "uid" required>
+                <br><br>
+                <label>Enter the names of your RideShare buddies:</label>
+                <br>
+                <input type = "text" id = "pname" name = "pname" required>
+    
+                <br><br>
+                <label>Enter the RideShare ID(s) of RideShare buddies:</label>
+                <br>
+                <input type = "pid" id = "pid" name = "pid" required>
+                <br><br>
+                <label>Select your perspective:</label>
+                <select  id = "pers">
+                    <option value = "driver">Driver</option>
+                    <option value = "passenger">Passenger</option>
+                
+                
+                </select>
+                <br><br>
+                <label>Rating:</label>
+                <select name = "rate" id = "rate">
+                    <option value = "one">One Star</option>
+                    <option value = "two">Two Star</option>
+                    <option value = "three">Three Star</option>
+                    <option value = "four">Four Star</option>
+                    <option value = "five">Five Star</option>
+                </select>
+            
+                <br><br>
+    
+                <label></label>
+                <textarea id = "feedback" name = "feedback">Feel free to provide any feedback, suggestions, etc: </textarea>
+                <br>
+                <button onclick=storeInput()>Submit</button>
+            </form>
+        </div>
     </div>
-    <br>
-    
-    <form class = "form" action = "data.html" method = "get">
-        <label>Name:</label>
-        <input type = "text" id = "name" name = "name" required>
-
-        <br><br>
-        <label>Enter your RideShare ID:</label>
-        <input type = "uid" id = "uid" name = "uid" required>
-        <br><br>
-        <label>Enter the names of your RideShare buddies:</label>
-        <br>
-        <input type = "text" id = "pname" name = "pname" required>
-
-        <br><br>
-        <label>Enter the RideShare ID(s) of RideShare buddies:</label>
-        <br>
-        <input type = "pid" id = "pid" name = "pid" required>
-        <br><br>
-        <label>Select your perspective:</label>
-        <select  id = "pers">
-            <option value = "driver">Driver</option>
-            <option value = "passenger">Passenger</option>
-        
-          
-        </select>
-        <br><br>
-        <label>Rating:</label>
-        <select name = "rate" id = "rate">
-            <option value = "one">One Star</option>
-            <option value = "two">Two Star</option>
-            <option value = "three">Three Star</option>
-            <option value = "four">Four Star</option>
-            <option value = "five">Five Star</option>
-        </select>
-    
-        <br><br>
-
-        <label></label>
-        <textarea id = "feedback" name = "feedback" rows = "20" cols = "40">Feel free to provide any feedback, suggestions, etc: </textarea>
-        <br>
-        <button onclick=storeInput()>Submit</button>
-    </form>
 </body>
 </html>

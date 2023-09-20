@@ -78,6 +78,18 @@ aside {
     margin-top: 110px;
     border-radius: 100px;
 }
+    
+#slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    
+    margin: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
 
 .desc {
     position: relative;
