@@ -1,13 +1,24 @@
+//im a little python baby why is this so hard
 /*
-xxxxx-xxxxxx-x
-xxxxx-xxxxxx-x
-xxxxx-xxxxxx-x
--------------x
-xxxxx-xxxxxx-x
-xxxxxxxxxxxxxx*/
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+----------------------
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+----------------------
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+xxxxx-xxxxxxxxxx-xxxxx
+*/
 
 /*
-xxxxX-xxxxxx-x;xxxxx-xxxxxx-x;xxxxx-xxxxxx-x;-------------x;xxxxx-xxxxxx-x;xxxxxxxxxxxxxx;*/
+xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;----------------------;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;----------------------;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;
+*/
 
 /*
 ---;-x-;---;*/
@@ -21,11 +32,11 @@ xxxxX-xxxxxx-x;xxxxx-xxxxxx-x;xxxxx-xxxxxx-x;-------------x;xxxxx-xxxxxx-x;xxxxx
 var destinations, inp, line, map;
 map = [];
 //MAP VARIES ON INPUT, ; MEANS NEW LINE
-inp = "---;-x-;---;";
+inp = "xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;----------------------;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;----------------------;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;";
 line = [];
 
-//this list of destinations will be updated when we have a map
-destinations = [["mcdonalds", 1, 1], ["placeholder", 0, 0]];
+
+destinations = [["park", 3, 2], ["library", 3, 11], ["smallHouses",3,17], ["waterfall", 5,3], ["barnhouse",5,7],["mediumHouses",5,12], ["apartments",8,1], ["largeHouse",8,17], ["lakeside",10,15]];
 
 
 //input the the value inp into the matrix map
@@ -64,7 +75,7 @@ console.log("userLocation:")
 console.log(userLocation);
 //will need to modify to accept input at some point
 //destinationName is the input for the destinationName
-destinationName = "mcdonalds"
+destinationName = "barnhouse"
 //destinationName = input("something like mcdonalds: ");
 destinationIndex = 0;
 
@@ -194,15 +205,15 @@ finalDestination[1] = Number.parseInt(finalDestination[1]);
 
 //define final variables
 var stepsForTravel, timeForTravel;
-stepsForTravel = 0;
-timeForTravel = 0;
+stepsForTravel = 0; //one coordinate = one mile?
+timeForTravel = 0; 
 
 //this is the easiest part since our map will follow the blocks format hahaha i love shortcuts
 
 stepsForTravel = finalDestination[0] - userLocation[0] + (finalDestination[1] - userLocation[1]);
-timeForTravel = stepsForTravel * 30;
+timeForTravel = stepsForTravel * 3; // in minutes
 
 console.log("stepsForTravel:");
 console.log(stepsForTravel);
 console.log("timeForTravel:");
-console.log(timeForTravel)
+console.log(timeForTravel);
