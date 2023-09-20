@@ -215,7 +215,7 @@ function pathFinding(dest) {
   //this is the easiest part since our map will follow the blocks format hahaha i love shortcuts
 
   stepsForTravel = finalDestination[0] - userLocation[0] + (finalDestination[1] - userLocation[1]);
-  timeForTravel = stepsForTravel * 3; // in minutes
+  timeForTravel = stepsForTravel *3*0.2; // in minutes
 
   console.log("stepsForTravel:");
   console.log(stepsForTravel);
