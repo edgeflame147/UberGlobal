@@ -2,6 +2,8 @@
 <html lang="en">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel = "stylesheet" href = "form/form.css">
+
+<script src = "form.js"></script>
 <style>
     .checked {
         color: gold;
@@ -20,7 +22,6 @@
     <title>Survey</title>
 </head>
 <body style = "background-color: rgb(249, 207, 249);">
-    <script src = "form/form.js"></script>
     <h1>Rate Your Experience!</h1>
     <p style = "color: red;">Your name and ID are kept anonymous and your feedback</p>
     <p style = "color: red">can be seen on all individuals'(who's RideShare IDs are</p>
@@ -36,23 +37,23 @@
     <br>
     
     <form class = "form" action = "data.html" method = "get">
-        <label for = "name">Name:</label>
+        <label>Name:</label>
         <input type = "text" id = "name" name = "name" required>
 
         <br><br>
-        <label for = "uid">Enter your RideShare ID:</label>
+        <label>Enter your RideShare ID:</label>
         <input type = "uid" id = "uid" name = "uid" required>
         <br><br>
-        <label for = "pname">Enter the names of your RideShare buddies:</label>
+        <label>Enter the names of your RideShare buddies:</label>
         <br>
         <input type = "text" id = "pname" name = "pname" required>
 
         <br><br>
-        <label for = "pid">Enter the RideShare ID(s) of RideShare buddies:</label>
+        <label>Enter the RideShare ID(s) of RideShare buddies:</label>
         <br>
         <input type = "pid" id = "pid" name = "pid" required>
         <br><br>
-        <label for = "pers">Select your perspective:</label>
+        <label>Select your perspective:</label>
         <select  id = "pers">
             <option value = "driver">Driver</option>
             <option value = "passenger">Passenger</option>
@@ -60,7 +61,7 @@
           
         </select>
         <br><br>
-        <label for = "rate">Rating:</label>
+        <label>Rating:</label>
         <select name = "rate" id = "rate">
             <option value = "one">One Star</option>
             <option value = "two">Two Star</option>
@@ -71,13 +72,10 @@
     
         <br><br>
 
-        <label for = "feedback"></label>
+        <label></label>
         <textarea id = "feedback" name = "feedback" rows = "20" cols = "40">Feel free to provide any feedback, suggestions, etc: </textarea>
         <br>
-        <input type = "submit" value = "Submit">
+        <button onclick=storeInput()>Submit</button>
     </form>
-    <script>
-        storeInput();
-    </script>
 </body>
 </html>
