@@ -9,24 +9,24 @@ The widespread use of cars, although convenient and efficient, have major drawba
 
 **Goal**
 To address these problems, Transport Router aims to create an accessible interface that promotes environmental preservation and streamlines the user’s driving experience. 
-Project Process
 
-**Initial Planning Process**
-brainstormed all our ideas and goals for the project
+**Project Process**
+Initial Planning Process
+  - brainstormed all our ideas and goals for the project
 Programming
-next, we spit up to create individual pieces of code and algorithms for individual parts of the project
+  - next, we spit up to create individual pieces of code and algorithms for individual parts of the project
 Putting it together
-we put all our pieces together into our website
+  - we put all our pieces together into our website
 
 **Project Features**
-feedback feature for certain drivers 
-Map of the area 
-Ability to request rides
+  - Feedback feature for certain drivers 
+  - Map of the area 
+  - Ability to request rides
 
 **Challenges**
-coming up with all of our ideas
-Putting all of our ideas together into one cohesive product
-Time management and finishing everything at a reasonable pace
+  - Coming up with all of our ideas
+  - Putting all of our ideas together into one cohesive product
+  - Time management and finishing everything at a reasonable pace
 
 **Credits**
 Bill Wang (Main Coder) - worked on code for map coordinates and slideshow
