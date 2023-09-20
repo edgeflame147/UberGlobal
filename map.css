@@ -19,8 +19,7 @@ h3 {
 #map {
     height: 620px;
     width: 1000px;
-    position: absolute;
-    left: 300px;
+    margin-left: 170px;
     top: 120px;
     z-index: -2;
 }
