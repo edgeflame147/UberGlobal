@@ -1,4 +1,3 @@
-//im a little python baby why is this so hard
 /*
 xxxxx-xxxxxxxxxx-xxxxx
 xxxxx-xxxxxxxxxx-xxxxx
@@ -26,7 +25,7 @@ xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxxxxxxx-xxxxx;xxxxx-xxxxx
 // defining some initial variables
 
 
-// all the stuff for checking prints into console, bc i have no idea whats going on in Java
+// all the stuff for checking prints into console
 
 //define variables with no definition that will be used later
 keyVal = [2, 0, 1, 4, 3];
@@ -206,14 +205,14 @@ function pathFinding(dest) {
   finalDestination[0] = Number.parseInt(finalDestination[0]);
   finalDestination[1] = Number.parseInt(finalDestination[1]);
 
-  //find number of steps for travel, and estimated time for travel (guessing like 30 seconds per coordinate change?)
+  //find number of steps for travel, and estimated time for travel
 
   //define final variables
   var stepsForTravel, timeForTravel;
   stepsForTravel = 0; //one coordinate = one mile?
   timeForTravel = 0; 
 
-  //this is the easiest part since our map will follow the blocks format hahaha i love shortcuts
+  //this is the easiest part since our map will follow the blocks format
   //0.1 miles per unit (x or - symbols)
   stepsForTravel = finalDestination[0] - userLocation[0] + (finalDestination[1] - userLocation[1]);
   timeForTravel = stepsForTravel*3*0.2; // in minutes
