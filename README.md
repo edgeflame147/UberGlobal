@@ -11,10 +11,11 @@ The widespread use of cars, although convenient and efficient, have major drawba
 To address these problems, Transport Router aims to create an accessible interface that promotes environmental preservation and streamlines the user’s driving experience. 
 
 **Project Process**
+
 Initial Planning Process
   - brainstormed all our ideas and goals for the project
 Programming
-  - next, we spit up to create individual pieces of code and algorithms for individual parts of the project
+  - next, we split up to create individual pieces of code and algorithms for individual parts of the project
 Putting it together
   - we put all our pieces together into our website
 
